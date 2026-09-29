@@ -1,0 +1,120 @@
+/* ============ 2. Dark modern, full-bleed hero ============ */
+.bp2 {
+    background: #14161a;
+    color: #cfd2d8;
+    padding-bottom: 3rem;
+}
+
+.bp2 .hero-banner {
+    height: 440px;
+    width: 100%;
+    background: linear-gradient(rgba(10, 11, 13, .3), rgba(10, 11, 13, .92)), url('https://picsum.photos/seed/devbanner/1600/700') center/cover;
+    display: flex;
+    align-items: flex-end;
+    padding: 3rem 0;
+}
+
+.bp2 .cat-tag {
+    background: #ff6f3c;
+    color: #fff;
+    font-size: .78rem;
+    font-weight: 700;
+    padding: .3rem .9rem;
+    border-radius: 999px;
+}
+
+.bp2 h1 {
+    font-weight: 800;
+    font-size: 2.3rem;
+    color: #fff;
+    margin: 1rem 0 .8rem;
+}
+
+.bp2 .post-meta {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    font-size: .88rem;
+    color: #cfd2d8;
+}
+
+.bp2 .post-meta img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bp2 .post-meta .name {
+    color: #fff;
+    font-weight: 600;
+}
+
+.bp2 .article-body {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin-top: 2.5rem;
+}
+
+.bp2 .article-body p {
+    margin-bottom: 1.4rem;
+}
+
+.bp2 .article-body h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem;
+    color: #fff;
+}
+
+.bp2 .article-body code {
+    background: #1f2229;
+    color: #ff6f3c;
+    padding: .15rem .4rem;
+    border-radius: 4px;
+}
+
+.bp2 .article-body pre {
+    background: #1f2229;
+    border-radius: 10px;
+    padding: 1.2rem;
+    overflow-x: auto;
+    color: #cfd2d8;
+}
+
+.bp2 .tags a {
+    background: #1f2229;
+    color: #cfd2d8;
+    font-size: .82rem;
+    padding: .35rem .8rem;
+    border-radius: 999px;
+    margin: 0 .4rem .4rem 0;
+    display: inline-block;
+}
+
+.bp2 .tags a:hover {
+    background: #ff6f3c;
+    color: #fff;
+}
+
+.bp2 .share-bar {
+    display: flex;
+    gap: .6rem;
+    margin-top: 2rem;
+}
+
+.bp2 .share-bar a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1f2229;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cfd2d8;
+}
+
+.bp2 .share-bar a:hover {
+    background: #ff6f3c;
+    color: #fff;
+}

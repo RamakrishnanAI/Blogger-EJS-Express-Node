@@ -1,0 +1,88 @@
+ /* ---------- Sidebar 2: Dark card style ---------- */
+ .sb2 {
+     margin-top: 3.5rem;
+ }
+
+ .sb2 .widget {
+     background: #14161a;
+     color: #cfd2d8;
+     box-shadow: none;
+ }
+
+ .sb2 h6 {
+     color: #fff;
+ }
+
+ .sb2 h6::before {
+     content: "";
+     display: inline-block;
+     width: 10px;
+     height: 10px;
+     background: #ff6f3c;
+     border-radius: 2px;
+     margin-right: .5rem;
+ }
+
+ .sb2 .search-form input {
+     background: #1f2229;
+     border: 1px solid #33363f;
+     color: #fff;
+     border-radius: 8px;
+ }
+
+ .sb2 .search-form input::placeholder {
+     color: #7c8089;
+ }
+
+ .sb2 .search-form button {
+     background: #ff6f3c;
+     border: none;
+     border-radius: 8px;
+     color: #fff;
+     margin-left: .4rem;
+ }
+
+ .sb2 .top-post {
+     display: flex;
+     gap: .8rem;
+     align-items: center;
+     margin-bottom: 1rem;
+ }
+
+ .sb2 .top-post .num {
+     font-size: 1.4rem;
+     font-weight: 800;
+     color: #33363f;
+     width: 28px;
+ }
+
+ .sb2 .top-post .title {
+     font-size: .88rem;
+     font-weight: 600;
+     color: #fff;
+     line-height: 1.3;
+ }
+
+ .sb2 .top-post .title:hover {
+     color: #ff6f3c;
+ }
+
+ .sb2 .top-post .meta {
+     font-size: .76rem;
+     color: #7c8089;
+ }
+
+ .sb2 .cat-pills a {
+     display: inline-block;
+     background: #1f2229;
+     color: #cfd2d8;
+     border-radius: 999px;
+     padding: .35rem .9rem;
+     font-size: .82rem;
+     margin: 0 .4rem .5rem 0;
+ }
+
+ .sb2 .cat-pills a:hover {
+     background: #ff6f3c;
+     color: #fff;
+ }

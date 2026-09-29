@@ -1,0 +1,21 @@
+ .navbar-collapse {
+   flex-grow: 0;
+ }
+ .navbar-nav .nav-link.active {
+  color: #ff6f3c;
+}
+.navbar-nav .nav-link:hover {
+ color: #ff6f3c;
+}
+
+.login-button {
+    border: 2px solid #ff6f3c;
+    border-radius: 999px;
+    color: #ff6f3c;
+}
+
+.login-button:hover {
+    border: 2px solid #ff6f3c;
+    background-color: #ff6f3c;
+    color: #fff;
+}

@@ -1,0 +1,38 @@
+ body { margin: 0; font-family: 'Segoe UI', system-ui, sans-serif; }
+
+   .demo-row { margin-top: 1.5rem; margin-bottom: 0; }
+
+   /* ============ Shared widget card base ============ */
+  .widget {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+  .widget h6 {
+    font-weight: 700;
+    font-size: .95rem;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    margin-bottom: 1.1rem;
+  }
+
+  /* Blog List */
+
+  .blog-card{
+    background: #14161a;
+    border-radius: 12px;
+    color: #fff;
+  }
+  .blog-card .meta{
+    font-size: .76rem; 
+    color: #7c8089; 
+  }
+  .blog-card .select-blog{
+    font-size: .82rem; 
+    color: #fff; 
+    text-decoration: none;
+  }
+  .blog-card .select-blog:hover{
+    color: #ff6f3c; 
+  }

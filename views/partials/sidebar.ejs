@@ -1,0 +1,41 @@
+<div class="col-lg-3 sb2">
+
+    <div class="widget">
+        <h6>Search</h6>
+        <form class="search-form d-flex" role="search" onsubmit="return false;">
+            <input type="search" class="form-control" placeholder="Search the blog...">
+            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+
+    <div class="widget">
+        <h6>Top Blogs</h6>
+        <% for(let i=0; i < topBlogs.length; i++){ %>
+            <div class="top-post">
+                <div class="num">
+                    <%= i + 1 %>
+                </div>
+                <div>
+                    <a href="/blogs/<%= topBlogs[i]?.blog_id || '' %>" class="title d-block">
+                        <%= topBlogs[i]?.title || 'Card title' %>
+                    </a>
+                    <div class="meta">
+                        <%= topBlogs[i]?.readTime || '8 min read' %>
+                    </div>
+                </div>
+            </div>
+            <% } %>
+    </div>
+
+    <div class="widget">
+        <h6>Top Categories</h6>
+        <div class="cat-pills">
+            <% for(let i=0; i < topCategories.length; i++){ %>
+                <a href="categories/<%= topCategories[i] || '' %>">
+                    <%= topCategories[i] || 'Category' %>
+                </a>
+                <% } %>
+        </div>
+    </div>
+
+</div>

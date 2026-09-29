@@ -1,0 +1,138 @@
+{
+  "blog_list": [
+    {
+      "author": "Ramakrishnan",
+      "blog_id": "blog_id_1001",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "The massive integration of AI into corporate applications has triggered an entirely new category of cyber defense. Security is no longer just about protecting endpoints—it is about securing the models themselves from manipulation.",
+      "title": "AI Security (AI-SPM & LLM Vulnerabilities)",
+      "time_read": "8 min",
+      "date": "26 January 2026",
+      "categories": ["AI/ML", "Cyber Security"],
+      "blog_content": "<p>As enterprises race to embed large language models into everything from customer support to internal tooling, a new attack surface has opened up — one that traditional endpoint and network security was never designed to cover. AI Security Posture Management (AI-SPM) has emerged as the discipline for mapping, monitoring, and hardening this surface.</p><h2>What Makes LLMs Different</h2><p>Unlike conventional software, an LLM's behavior is shaped by its training data, fine-tuning, and the prompts it receives at runtime. That flexibility is also its weakness. Attackers don't need to breach a firewall — they can manipulate a model through carefully crafted inputs.</p><h2>Common Attack Vectors</h2><p>Prompt injection remains the most widely exploited technique, where malicious instructions are hidden inside seemingly normal text, documents, or even images fed to the model. Data poisoning during fine-tuning and model extraction through repeated querying are close behind.</p><blockquote>\"Securing an LLM isn't a patch you apply once — it's a posture you maintain continuously as the model, its data, and its integrations evolve.\"</blockquote><h2>Building an AI-SPM Program</h2><p>Effective programs start with an inventory of every model in production, its data lineage, and its access permissions. From there, teams layer in input/output filtering, anomaly detection on model responses, and strict boundaries on what actions an AI agent is allowed to take autonomously.</p><p>As AI adoption accelerates, AI-SPM is quickly becoming as fundamental to security teams as cloud security posture management was a decade ago.</p>"
+    },
+    {
+      "author": "Waseem",
+      "blog_id": "blog_id_1002",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "Traditional cloud identity focused heavily on managing human users. Now, automated cloud workloads, APIs, microservices, and autonomous AI agents outnumber human users by an estimated 100-to-1 ratio.",
+      "title": "The Non-Human Identity Perimeter",
+      "time_read": "2 min",
+      "date": "26 August 2026",
+      "categories": ["AI/ML", "Cyber Security"],
+      "blog_content": "<p>For years, identity and access management revolved around a simple question: is this the right human, logging in from the right place? That question no longer covers most of what's actually connecting to enterprise systems.</p><h2>A Shift in the Numbers</h2><p>Service accounts, API keys, microservice-to-microservice tokens, and now autonomous AI agents have quietly become the dominant class of identity in the cloud — outnumbering human users by roughly 100 to 1 in many large organizations.</p><h2>Why This Matters</h2><p>Non-human identities are frequently over-privileged, rarely rotated, and poorly audited compared to their human counterparts. A single leaked service token can grant an attacker the same reach as a compromised employee account — often with far less monitoring in place.</p><p>Securing this expanding perimeter means treating every workload and agent as a first-class identity: short-lived credentials, least-privilege scopes, and continuous discovery of what's actually talking to what.</p><p>Organizations that get ahead of this shift are finding that non-human identity governance isn't a niche concern anymore — it's fast becoming the primary identity problem to solve.</p>"
+    },
+    {
+      "author": "Gopala",
+      "blog_id": "blog_id_1003",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "The days of manual server setup, basic scripting, and ticketing are rapidly evolving. Cloud providers are deploying autonomous AI agents to run security reviews, fix configuration drift, and rewrite code.",
+      "title": "Agentic DevOps and Cloud Operations",
+      "time_read": "10 min",
+      "date": "24 August 2026",
+      "categories": ["AI/ML", "DevOps", "Cloud Computing"],
+      "blog_content": "<p>DevOps has always been about closing the gap between writing code and running it reliably in production. Agentic AI is now closing that gap further than most teams expected this soon — not by assisting engineers, but by acting on their behalf.</p><h2>From Scripts to Agents</h2><p>Where a runbook once told an on-call engineer what to check during an incident, an autonomous agent can now perform that investigation itself: pulling logs, correlating metrics, identifying the likely root cause, and in many cases, applying a fix before a human is even paged.</p><h2>Where Agents Are Already Working</h2><p>Cloud providers are rolling out agents that continuously scan for configuration drift, flag insecure IAM policies, and open pull requests to remediate them. Others watch deployment pipelines and roll back releases automatically when error rates spike.</p><blockquote>\"The role of the platform engineer is shifting from operator to supervisor of a fleet of agents.\"</blockquote><h2>The New Guardrails</h2><p>This shift raises a new set of questions: how much autonomy should an agent have in production, what actions require human sign-off, and how do you audit a decision an AI made at 3 a.m.? Teams adopting agentic DevOps are finding that guardrails — not raw capability — are what determine whether this actually saves time or creates new incidents.</p><p>The teams moving fastest are the ones treating agent permissions with the same rigor they'd apply to a new hire: scoped access, clear escalation paths, and a full audit trail.</p>"
+    },
+    {
+      "author": "Ramakrishnan",
+      "blog_id": "blog_id_1004",
+      "image": "",
+      "main_tag": "Cryptography",
+      "description": "Quantum computing has transitioned from purely academic research to commercially viable systems using neutral-atom technology. This rapid progress has compressed the timeline for when standard encryption will become vulnerable.",
+      "title": "Post-Quantum Cryptography (PQC)",
+      "time_read": "5 min",
+      "date": "12 August 2026",
+      "categories": ["Cryptography", "Quantum Computing", "Cyber Security"],
+      "blog_content": "<p>For most of the last decade, quantum computing's threat to encryption felt comfortably distant — a problem for the next generation of security engineers. Recent progress in neutral-atom quantum hardware has changed that calculus considerably.</p><h2>Why RSA and ECC Are at Risk</h2><p>Algorithms like RSA and elliptic-curve cryptography rely on math problems that are practically impossible for classical computers to solve at scale. A sufficiently powerful quantum computer running Shor's algorithm could solve them in a fraction of the time, unraveling the encryption that protects everything from banking transactions to TLS connections.</p><h2>Harvest Now, Decrypt Later</h2><p>The more immediate concern isn't a quantum computer breaking encryption today — it's adversaries archiving encrypted data now, betting they'll be able to decrypt it once the hardware catches up. For data that needs to stay confidential for years, that clock is already ticking.</p><h2>The Move to PQC</h2><p>Standards bodies have finalized lattice-based and hash-based algorithms designed to resist quantum attacks, and major cloud providers and browsers have begun rolling out hybrid classical-PQC key exchanges. Migrating isn't trivial — it touches certificates, hardware security modules, and legacy systems that assume today's algorithms are permanent.</p><p>Security teams that haven't started inventorying where and how they use vulnerable cryptography are already behind; the migration window is measured in years, not months.</p>"
+    },
+    {
+      "author": "Ramakrishnan",
+      "blog_id": "blog_id_1005",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "Rolled out as a powerful frontier model featuring advanced inference capabilities.",
+      "title": "OpenAI GPT-6 Astra",
+      "time_read": "7 min",
+      "date": "1 September 2026",
+      "categories": ["AI/ML"],
+      "blog_content": "<p>OpenAI's latest frontier release, GPT-6 Astra, marks a notable step up in inference-time reasoning — the model's ability to work through multi-step problems by allocating more computation at the moment it's asked, rather than relying purely on what it learned during training.</p><h2>What's New</h2><p>Astra extends the inference-scaling approach popularized by earlier reasoning-focused models, with improvements aimed at longer context retention, more reliable tool use, and reduced hallucination on multi-hop factual questions.</p><h2>Real-World Impact</h2><p>Early adopters report meaningful gains on tasks that require sustained reasoning — complex coding tasks spanning multiple files, multi-step data analysis, and agentic workflows where the model needs to plan several actions ahead rather than respond to a single prompt.</p><blockquote>\"The gap between 'answering a question' and 'completing a task' is where most of this generation's progress is happening.\"</blockquote><p>As with previous frontier releases, the real test will be how Astra performs once it's integrated into production systems at scale — where latency, cost, and reliability matter just as much as raw capability.</p>"
+    },
+    {
+      "author": "Venki",
+      "blog_id": "blog_id_1006",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "A new program leveraging Gemini 3.8 Flash Cyber to autonomously find and fix software vulnerabilities.",
+      "title": "Google Fairwind",
+      "time_read": "5 min",
+      "date": "3 September 2026",
+      "categories": ["AI/ML", "Cyber Security"],
+      "blog_content": "<p>Google's newly announced Fairwind program puts its Gemini 3.8 Flash Cyber model to work on one of security's most persistent problems: the sheer volume of vulnerabilities that outpaces the number of engineers available to fix them.</p><h2>How It Works</h2><p>Fairwind continuously scans open-source and internal codebases, using the model to identify vulnerable patterns, reason about exploitability, and generate patches — not just flag issues for a human to eventually triage.</p><h2>Beyond Static Analysis</h2><p>Unlike traditional static analysis tools that rely on known signatures, Fairwind's model-driven approach can reason about novel vulnerability patterns and understand the broader context of how a piece of code is used, reducing both false positives and missed issues.</p><p>Google has stated the program will initially focus on widely used open-source libraries, where a single fixed vulnerability can protect thousands of downstream projects at once.</p><p>If it holds up at scale, Fairwind represents a meaningful shift from AI-assisted security review toward AI-driven vulnerability remediation — with humans reviewing fixes rather than hunting for bugs from scratch.</p>"
+    },
+    {
+      "author": "Sanghi",
+      "blog_id": "blog_id_1007",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "The personalised AI agent is powered by Meta's large language model (LLM), Muse Spark. It is currently only available for users in the US. The AI agent comes with built-in connectors for a wide range of services.",
+      "title": "Meta Muse",
+      "time_read": "5 min",
+      "date": "4 September 2026",
+      "categories": ["AI/ML"],
+      "blog_content": "<p>Meta has entered the personal AI agent race with Muse, a consumer-facing assistant built on its Muse Spark language model and designed to plug directly into the services people already use daily.</p><h2>Built-In Connectors</h2><p>Rather than functioning as a standalone chatbot, Muse ships with native connectors spanning messaging, calendars, and shopping — letting it take real actions like scheduling events or drafting replies instead of just answering questions about them.</p><h2>A US-First Rollout</h2><p>The initial release is limited to users in the United States, a deliberate choice that lets Meta iterate on privacy controls and connector reliability before expanding to markets with different regulatory requirements around data access and AI agents.</p><blockquote>\"The assistants that win this next phase won't be the ones with the biggest model — they'll be the ones with the deepest, safest integrations.\"</blockquote><p>Muse's success will likely hinge less on Muse Spark's raw language capabilities and more on how well it handles the messy reality of connecting to dozens of third-party services without compromising user trust.</p>"
+    },
+    {
+      "author": "Sanghiss",
+      "blog_id": "blog_id_1008",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "TCS' subsidiary HyperVault secured 264 acres in Hyderabad. It is building a massive 1GW AI data center tailored for custom GPU deployments and next-generation frontier AI training.",
+      "title": "TCS HyperVault 1GW Campus",
+      "time_read": "2 min",
+      "date": "3 September 2026",
+      "categories": ["AI/ML", "TCS"],
+      "blog_content": "<p>TCS subsidiary HyperVault has secured 264 acres in Hyderabad for what will become one of the largest AI-dedicated data center campuses in the region, with a planned capacity of 1 gigawatt.</p><h2>Built for Frontier-Scale Training</h2><p>Unlike general-purpose cloud data centers, the HyperVault campus is being designed specifically around custom GPU deployments, with power delivery, cooling, and networking architected for the sustained, high-density loads that frontier model training demands.</p><h2>Why Location Matters</h2><p>Hyderabad's growing power infrastructure and established tech talent pool make it an attractive base for a facility of this scale, positioning India as a serious contender in the global race for AI compute capacity rather than solely a consumer of it.</p><p>As demand for training and inference capacity continues to outstrip supply globally, projects like HyperVault signal that the infrastructure race is becoming as strategically important as the models themselves.</p>"
+    },
+    {
+      "author": "Periya Sanghi",
+      "blog_id": "blog_id_1009",
+      "image": "",
+      "main_tag": "AI/ML",
+      "description": "We've moved past simple autocomplete tools. In 2026, the biggest story is Agentic AI—autonomous AI agents that don't just suggest lines of code, but plan, build, debug, and push full features independently.",
+      "title": "The Evolution of AI Coding (From Copilot to Autopilot)",
+      "time_read": "3 min",
+      "date": "17 September 2026",
+      "categories": ["AI/ML", "Programming"],
+      "blog_content": "<p>The first wave of AI coding tools worked like a faster autocomplete — suggesting the next line, occasionally a whole function, always waiting for a developer to accept or reject. That model already feels dated.</p><h2>From Suggestion to Execution</h2><p>Today's agentic coding tools take a ticket or a feature description and work through the entire lifecycle themselves: reading the relevant parts of the codebase, writing the implementation, running the test suite, fixing failures, and opening a pull request — with a human reviewing the result rather than authoring it line by line.</p><h2>What Changes for Developers</h2><p>The job is shifting from writing code to specifying intent clearly and reviewing output critically. Developers who are good at breaking down problems and catching subtle agent mistakes are becoming more valuable than those who are simply fast typists.</p><blockquote>\"Code review isn't going away — it's becoming the entire job.\"</blockquote><p>Teams adopting these tools are finding the biggest bottleneck isn't the AI's coding ability anymore — it's whether their codebase, tests, and documentation are clear enough for an agent to work in safely.</p>"
+    },
+    {
+      "author": "Chinna Sanghi",
+      "blog_id": "blog_id_1010",
+      "image": "",
+      "main_tag": "DevOps",
+      "description": "Microservices and cloud architectures have become so massively complex that traditional, ad-hoc DevOps is pushing engineering teams to their limits. Enter Platform Engineering—the trend of building dedicated internal developer portals to simplify everything.",
+      "title": "Platform Engineering Over DevOps",
+      "time_read": "4 min",
+      "date": "18 September 2026",
+      "categories": ["AI/ML", "DevOps"],
+      "blog_content": "<p>As microservice counts climb into the hundreds and cloud architectures grow harder to reason about, the DevOps model of 'every team owns their own infrastructure' is starting to buckle under its own complexity.</p><h2>The Rise of the Internal Developer Portal</h2><p>Platform engineering teams are responding by building self-service portals that abstract away the underlying infrastructure — letting product teams provision a database, deploy a service, or spin up an environment through a simple interface instead of hand-rolling Terraform and CI/CD pipelines from scratch.</p><h2>Why Now</h2><p>The shift is being accelerated by AI-assisted tooling that can generate and maintain these internal portals faster than platform teams could build them manually a few years ago, lowering the cost of adopting the model.</p><p>Done well, platform engineering doesn't replace DevOps principles — it operationalizes them, turning tribal knowledge about deployments and infrastructure into a paved road every team can follow without reinventing it each time.</p><p>Organizations making this shift report fewer configuration-related incidents and faster onboarding, at the cost of needing a dedicated team to build and maintain the platform itself.</p>"
+    }
+  ],
+  "top_blogs": [
+    { "blog_id": "blog_id_1005", "title": "OpenAI GPT-6 Astra" },
+    { "blog_id": "blog_id_1004", "title": "Post-Quantum Cryptography (PQC)" },
+    { "blog_id": "blog_id_1003", "title": "Agentic DevOps and Cloud Operations" },
+    { "blog_id": "blog_id_1002", "title": "The Non-Human Identity Perimeter" },
+    { "blog_id": "blog_id_1001", "title": "AI Security (AI-SPM & LLM Vulnerabilities)" }
+  ],
+  "top_categories": [
+    "Backend",
+    "Frontend",
+    "Fullstack",
+    "AI/ML",
+    "Cloud Computing"
+  ]
+}

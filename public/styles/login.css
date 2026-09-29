@@ -1,0 +1,26 @@
+  .lp2 { background: #14161a; width: 50%; margin: 1.5rem auto;  border-radius: .5rem}
+  .lp2 .login-card {
+    background: #1b1e24;
+    border-radius: 16px;
+    padding: 2.5rem;
+    border: 1px solid #2a2d35;
+  }
+  .lp2 .brand { font-weight: 700; font-size: 1.4rem; color: #fff; margin-bottom: .3rem; }
+  .lp2 .brand span { color: #ff6f3c; }
+  .lp2 .subtitle { font-size: .88rem; color: #8a8f98; margin-bottom: 1.8rem; }
+  .lp2 label { font-size: .85rem; font-weight: 600; color: #cfd2d8; }
+  .lp2 .form-control {
+    background: #14161a; border: 1px solid #2a2d35; color: #fff;
+    border-radius: 8px; padding: .6rem .9rem;
+  }
+  .lp2 .form-control::placeholder { color: #5c606a; }
+  .lp2 .form-control:focus { border-color: #ff6f3c; box-shadow: none; background: #14161a; color: #fff; }
+  .lp2 .form-check-label, .lp2 .foot-link { color: #8a8f98; font-size: .85rem; }
+  .lp2 a.link-accent { color: #ff6f3c; text-decoration: none; font-weight: 600; }
+  .lp2 .btn-login { background: #ff6f3c; color: #fff; border-radius: 8px; padding: .65rem; font-weight: 600; }
+  .lp2 .btn-login:hover { background: #e85f2f; color: #fff; }
+  .lp2 .divider { display: flex; align-items: center; color: #5c606a; font-size: .8rem; margin: 1.4rem 0; }
+  .lp2 .divider::before, .lp2 .divider::after { content: ""; flex: 1; height: 1px; background: #2a2d35; }
+  .lp2 .divider span { padding: 0 .8rem; }
+  .lp2 .btn-social { border: 1px solid #2a2d35; border-radius: 8px; padding: .55rem; font-size: .88rem; color: #cfd2d8; background: transparent; }
+  .lp2 .btn-social:hover { background: #24272f; }
